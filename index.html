@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heatsink &amp; Thermal Calculator: thermal resistance, required Rθ, fins, PCB copper, Zth</title>
+    <meta name="description" content="Free heatsink and thermal calculator: build a junction-case-TIM-sink-ambient thermal resistance network, find the required heatsink Rθ, estimate natural convection fins and PCB copper area, and plot transient thermal impedance. Runs in your browser." />
+    <meta name="keywords" content="heatsink calculator, thermal resistance, junction temperature, required heatsink, natural convection fin heatsink, PCB copper heatsinking, thermal vias, TO-220, TO-247, DPAK, QFN, Zth, Foster model, thermal interface material" />
+    <meta name="author" content="Volodymyr Kopytsia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hermes98761234.github.io/heatsink-thermal-calculator/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Heatsink" />
+
+    <!-- Open Graph / Facebook / Telegram / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Heatsink &amp; Thermal Calculator" />
+    <meta property="og:url" content="https://hermes98761234.github.io/heatsink-thermal-calculator/" />
+    <meta property="og:title" content="Heatsink &amp; thermal calculator" />
+    <meta property="og:description" content="Thermal resistance network, required heatsink Rθ, natural convection fins, PCB copper and transient Zth in your browser." />
+    <meta property="og:image" content="https://hermes98761234.github.io/heatsink-thermal-calculator/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Heatsink and thermal calculator with a junction to ambient thermal resistance network" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Heatsink &amp; thermal calculator" />
+    <meta name="twitter:description" content="Required heatsink Rθ, fin and PCB copper estimates, transient Zth. Runs in your browser." />
+    <meta name="twitter:image" content="https://hermes98761234.github.io/heatsink-thermal-calculator/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Heatsink & Thermal Calculator",
+        "url": "https://hermes98761234.github.io/heatsink-thermal-calculator/",
+        "description": "Builds a junction-to-ambient thermal resistance network, computes the required heatsink thermal resistance, estimates natural convection plate-fin heatsinks and PCB copper heatsinking, and plots transient thermal impedance.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Volodymyr Kopytsia" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This calculator needs JavaScript.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
